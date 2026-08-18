@@ -1,5 +1,3 @@
-<!-- prettier-ignore -->
-# Tela de Login — Profissional
 
 ![Preview do Login](assets/images/examples/MuriloDev.png)
 
