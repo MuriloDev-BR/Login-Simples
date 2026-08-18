@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png"/>
+    <link rel="manifest" href="assets/favicon/site.webmanifest"/>
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Login - MuriloDev</title>
+</head>
+<body>
+    <div class="animated-background"></div>
+    <main class="login-container flex items-center justify-center min-h-screen px-4">
+        <section class="login-card p-6 sm:p-8 rounded-2xl w-full max-w-sm sm:max-w-md">
+            <div class="flex items-center gap-4 mb-4">
+
+                <!-- Logo -->
+                <img src="assets/images/logo.png" alt="Logo" class="w-14 h-14">  
+
+                <div class="text-left">
+                    <h1 class="text-2xl sm:text-3xl font-extrabold mb-1 text-left">Login</h1>
+                    <p class="text-left mb-0 text-gray-300">Bem-vindo! Faça login para continuar.</p>
+                </div>
+            </div>
+
+            <form action="#" method="post" class="flex flex-col gap-4 w-full" novalidate>
+                <div class="flex flex-col">
+                    <label class="text-gray-300 text-sm font-medium mb-2" for="email">Email</label>
+                    <input aria-label="Email" id="email" name="email" type="email" required placeholder="seu@email.com"
+                        class="login-input w-full appearance-none rounded-lg py-3 px-3 leading-tight outline-none transition" />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-gray-300 text-sm font-medium mb-2" for="password">Senha</label>
+                    <div class="relative">
+                        <input aria-label="Senha" id="password" name="password" type="password" required placeholder="Sua senha"
+                            class="login-input w-full appearance-none rounded-lg py-3 px-3 pr-10 leading-tight outline-none transition" />
+                        <button type="button" id="togglePassword" aria-label="Mostrar senha" aria-pressed="false"
+                            class="absolute inset-y-0 right-0 flex items-center pr-3 text-gray-300 hover:text-white focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="flex w-full items-center">
+                    <button type="submit" class="w-full bg-cyan-500 text-white font-medium py-3 rounded-lg hover:bg-cyan-400 transition duration-200 shadow-lg">Entrar</button>
+                </div>
+
+                <div class="flex items-center gap-3 my-1">
+                    <span class="h-px bg-white/10 flex-1"></span>
+                    <span class="text-gray-400 text-sm">ou</span>
+                    <span class="h-px bg-white/10 flex-1"></span>
+                </div>
+
+                <div class="flex gap-3 w-full md:flex-row md:justify-between">
+                    <button type="button" aria-label="Entrar com Google" title="Entrar com Google" class="w-full md:flex-1 flex items-center justify-center bg-white/5 border border-white/6 text-white p-3 rounded-lg hover:bg-white/10 transition">
+                        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" class="w-5 h-5 mr-2" />
+                        <span class="hidden md:inline">Google</span>
+                    </button>
+
+                    <button type="button" aria-label="Entrar com GitHub" title="Entrar com GitHub" class="w-full md:flex-1 flex items-center justify-center bg-white/5 border border-white/6 text-white p-3 rounded-lg hover:bg-white/10 transition">
+                        <img src="https://www.svgrepo.com/show/448225/github.svg" alt="GitHub" class="w-5 h-5 mr-2" />
+                        <span class="hidden md:inline">Github</span>
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="assets/script.js"></script>
+</body>
+</html>
